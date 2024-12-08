@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Apprenant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+        <!-- En-tête Section -->
+        <div class="bg-white shadow rounded-lg p-6">
+            <div>
+                <div class="flex-1">
+                    <h1 class="text-xl font-bold">
+                        NDIAGA LO 
+                        <span class="text-red-500"> • </span>
+                        <span>Grade : <span class="text-red-600 font-semibold">Ingénieur informatique</span></span>
+                        <span class="text-red-500"> • </span>
+                        <span>Poste : <span class="text-red-600 font-semibold">Chef de service SA</span></span>
+                    </h1>
+                </div>
+            </div>
+            <div class="flex md:flex-nowrap items-center gap-4">
+                <!-- Photo et bouton Modifier -->
+                <div class="flex flex-col items-center">
+                    <img src="https://via.placeholder.com/100" alt="Photo Apprenant" class="w-24 h-24 rounded-full border border-gray-300">
+                    <button class="text-blue-500 mt-2 hover:underline text-sm">✏️ Modifier</button>
+                </div>
+                <!-- Informations principales -->
+                
+            
+            <!-- Bloc d'informations détaillées -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <!-- Bloc IDENTIFICATION -->
+                <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-red-500 shadow-sm relative">
+                    <h2 class="absolute -top-4 left-4 bg-white px-2 text-red-500 font-semibold">IDENTIFICATION</h2>
+                    <p><span class="font-bold">MAT :</span> 1058217</p>
+                    <p><span class="font-bold">Nom :</span> LO</p>
+                    <p><span class="font-bold">Prénom :</span> Ndiaga</p>
+                </div>
+                <!-- Bloc SEXE / NAISSANCE -->
+                <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-red-500 shadow-sm relative">
+                    <h2 class="absolute -top-4 left-4 bg-white px-2 text-red-500 font-semibold">SEXE / NAISSANCE</h2>
+                    <p><span class="font-bold">Sexe :</span> M</p>
+                    <p><span class="font-bold">Date de naissance :</span> 11/12/2000</p>
+                    <p><span class="font-bold">Lieu de naissance :</span> Parcelles Assainies</p>
+                </div>
+                <!-- Bloc CONTACT -->
+                <div class="p-4 bg-gray-50 rounded-lg border-l-4 border-red-500 shadow-sm relative">
+                    <h2 class="absolute -top-4 left-4 bg-white px-2 text-red-500 font-semibold">CONTACT</h2>
+                    <p><span class="font-bold">Téléphone :</span> +221784559930</p>
+                    <p><span class="font-bold">Email :</span> sohnhero2024@gmail.com</p>
+                    <p><span class="font-bold">Email Pro :</span> ndiagalo250@gmail.com</p>
+                </div>
+            </div>
+        </div>  
+        </div>
+
+        <!-- Section Tabs -->
+        <div class="mt-6 bg-white shadow rounded-lg p-4">
+            <div class="flex space-x-4">
+                <button class="py-2 px-4 text-white bg-gray-800 rounded">Fiche d’émargement</button>
+                <button class="py-2 px-4 text-gray-800">Informations</button>
+                <button class="py-2 px-4 text-gray-800">Modules enseignés</button>
+                <button class="py-2 px-4 text-gray-800">Ses classes</button>
+                <button class="py-2 px-4 text-gray-800">Contrats</button>
+                <button class="py-2 px-4 text-gray-800">Sessions</button>
+            </div>
+        </div>
+
+        <!-- Tableau Section -->
+        <div class="mt-6 bg-white shadow rounded-lg p-4">
+            <div class="flex flex-wrap gap-4">
+                <select class="border rounded p-2">
+                    <option>Filtrer par classe</option>
+                </select>
+                <select class="border rounded p-2">
+                    <option>Filtrer par module</option>
+                </select>
+                <input type="date" class="border rounded p-2">
+                <input type="date" class="border rounded p-2">
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 bg-green-500 text-white rounded">En cours</button>
+                    <button class="px-4 py-2 bg-blue-500 text-white rounded">Valider</button>
+                    <button class="px-4 py-2 bg-red-500 text-white rounded">Annuler</button>
+                    <button class="px-4 py-2 bg-yellow-500 text-white rounded">Payer</button>
+                </div>
+            </div>
+            <table class="w-full mt-4 table-auto border-collapse">
+                <thead>
+                    <tr class="bg-gray-100 text-left">
+                        <th class="p-2 border">Code</th>
+                        <th class="p-2 border">Modules</th>
+                        <th class="p-2 border">Classe</th>
+                        <th class="p-2 border">Semestre</th>
+                        <th class="p-2 border">Date</th>
+                        <th class="p-2 border">Horaires</th>
+                        <th class="p-2 border">Type Cours</th>
+                        <th class="p-2 border">Status</th>
+                        <th class="p-2 border">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-2 border">UE-DB1</td>
+                        <td class="p-2 border">PHP</td>
+                        <td class="p-2 border">L1 DEV WEB/MOBILE</td>
+                        <td class="p-2 border">Semestre 1</td>
+                        <td class="p-2 border">07/10/2024</td>
+                        <td class="p-2 border">08:00 - 10:00</td>
+                        <td class="p-2 border">Cours en ligne</td>
+                        <td class="p-2 border text-green-500">Valider</td>
+                        <td class="p-2 border">
+                            <button class="text-blue-500">...</button>
+                        </td>
+                    </tr>
+                    <!-- Ajouter d'autres lignes ici -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

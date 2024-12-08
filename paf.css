@@ -1,0 +1,30 @@
+.card {
+    position: relative;
+    padding: 1rem;
+    border-left: 6px solid #ff0000; 
+    border-right: 6px solid #ff0000; 
+    background: #f9f9f9; 
+    border-radius: 15px; 
+    overflow: hidden;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff0000; 
+}
+
+.card::before {
+    top: -6px;
+    left: -6px;
+    border-top-left-radius: 11px; 
+}
+
+.card::after {
+    bottom: -6px;
+    right: -6px;
+    border-bottom-right-radius: 12px; 
+}
